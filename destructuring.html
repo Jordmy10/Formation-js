@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const voiture = {
+            modele: "Cybertruck",
+            marque: "Tesla",
+            modeFonctionnement: "Electrique",
+        }
+        
+        const { modele, marque, modeFonctionnement} = voiture
+        console.log( modele + "," , marque + "," , modeFonctionnement)
+
+        const [note1, note2, note3, note4, note5] = [12, 15, 8, 17 ,14]
+        console.log(note3)
+
+        function afficherResteDesCaracteristiques({marque, ...rest}){
+            console.log(marque)
+            console.log(rest)
+        }
+
+        afficherResteDesCaracteristiques(voiture)
+    </script>
+</body>
+</html>
